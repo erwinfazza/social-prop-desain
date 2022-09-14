@@ -4,7 +4,17 @@
 }
 
 body {
-    margin: 100px;
+    margin: 35px 100px;
+}
+
+@font-face {
+    font-family: 'league';
+    src: url(font/LeagueSpartan-Regular.ttf);
+}
+
+@font-face {
+    font-family: "league-bold";
+    src: url(font/LeagueSpartan-Bold.ttf);
 }
 
 .main {
@@ -26,44 +36,65 @@ body {
 /* isi */
 .isi {
     grid-area: 'text1';
-    background: orange;
+    background: hsl(0, 0%, 100%);
     width: 500px;
     height: 300px;
-
-
 }
 
+
 .angka {
-    text-align: center;
+    text-align: left;
     margin: 40px 10px;
+    width: 400px;
+    font-family: 'league-bold';
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
 }
 
 .data-angka {
     text-align: left;
-    margin: 20px 50px;
+    margin: 20px 10px;
+    width: 400px;
+    font-family: 'league';
+    font-size: 15;
+    color: hsl(303, 10%, 53%);
 }
 
 /* bitang1 */
 .bitang1 {
     grid-area: 'text2';
-    background-color: gray;
+    background-color: hsl(0, 0%, 100%);
     width: 500px;
-    margin-left: -50px;
-
+    margin-left: -20px;
+    font-family: 'league-bold';
+    color: hsl(300, 43%, 22%);
 }
 
 .rate1 {
-    margin: 80px 5px 50px;
+    margin: -86px 0 50px 120px;
 }
 
 .rate2 {
-    margin: 50px 0;
+    margin: -20px 0 0 50px;
     text-align: center;
 }
 
 .rate3 {
-    margin: 50px 0;
-    text-align: right;
+    margin: -20px 0 0 170px;
+    text-align: center;
+}
+
+/* starts */
+.starts1 {
+    margin: 68px 0;
+}
+
+.starts2 {
+    margin: 68px 0 0 70px;
+}
+
+.starts3 {
+    margin: 100px 0 0 150px;
 }
 
 /* bottom */
@@ -72,20 +103,106 @@ body {
     grid-template-areas:
         'col1 col2 col3';
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .btm1 {
-    background-color: purple;
+    background-color: hsl(300, 43%, 22%);
     height: 200px;
+    border-radius: 10px;
 }
 
 .btm2 {
-    background-color: purple;
+    background-color: hsl(300, 43%, 22%);
     height: 200px;
+    margin-top: 25px;
+    border-radius: 10px;
 }
 
 .btm3 {
-    background-color: purple;
+    background-color: hsl(300, 43%, 22%);
     height: 200px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+/* profile */
+.foto {
+    width: 50px;
+    border-radius: 50%;
+    margin: 30px 10px;
+}
+
+.icon {
+    margin: -80px 0 0 80px;
+}
+
+h4 {
+    font-family: 'league';
+    color: hsl(300, 24%, 96%);
+}
+
+span {
+    color: hsl(333, 80%, 67%);
+    font-family: 'league';
+    font-size: 14px;
+}
+
+.value {
+    margin: 20px 10px;
+    padding: 15px;
+    color: hsl(300, 24%, 96%);
+    font-family: 'league';
+}
+
+/* media query */
+@media(max-width: 576px) {
+    .main {
+        display: inline-block;
+    }
+
+    .container {
+        display: inline-block;
+    }
+
+    .bottom {
+        display: inline-block
+    }
+
+    body {
+        margin: 30px;
+    }
+
+    .starts1 {
+        margin: 30px;
+        padding: 10px 150px;
+
+    }
+
+    .starts2 {
+        margin: 30px;
+        padding: 10px 150px;
+
+    }
+
+    .starts3 {
+        margin: 30px;
+        padding: 10px 160px;
+
+    }
+
+    .rate1 {
+        margin: 10px;
+        padding: 0 150px;
+    }
+
+    .rate2 {
+        margin: 10px;
+        padding: 0 50px;
+    }
+
+    .rate3 {
+        margin: 10px;
+        padding: 0 50px;
+    }
 }
